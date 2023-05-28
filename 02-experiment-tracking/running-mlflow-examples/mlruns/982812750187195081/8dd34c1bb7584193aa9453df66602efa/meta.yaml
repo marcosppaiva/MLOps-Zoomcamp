@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Estudos/Python/MLOps-Zoomcamp/02-experiment-tracking/running-mlflow-examples/mlruns/982812750187195081/8dd34c1bb7584193aa9453df66602efa/artifacts
+end_time: 1685270579109
+entry_point_name: ''
+experiment_id: '982812750187195081'
+lifecycle_stage: active
+run_id: 8dd34c1bb7584193aa9453df66602efa
+run_name: clean-hound-251
+run_uuid: 8dd34c1bb7584193aa9453df66602efa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685270577189
+status: 3
+tags: []
+user_id: MarcosPaulo
