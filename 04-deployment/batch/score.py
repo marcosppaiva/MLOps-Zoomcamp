@@ -1,13 +1,8 @@
-import os
-import pickle
 import sys
 import uuid
 
 import mlflow
 import pandas as pd
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.pipeline import make_pipeline
 
 
 def generate_uuids(n):
@@ -39,9 +34,6 @@ def prepare_dictionaries(df: pd.DataFrame):
     numerical = ['trip_distance']
     dicts = df[categorical + numerical].to_dict(orient='records')
     return dicts
-
-
-# In[16]:
 
 
 def load_model(run_id):
