@@ -34,7 +34,8 @@ def run(month: int, year: int):
     X_val = dv.transform(dicts)
     y_pred = model.predict(X_val)
 
-    print(f"Mean predicted duration for March 2022: {round(mean(y_pred),2)}")
+    print(
+        f"Mean predicted duration for {month} {year}: {round(mean(y_pred),2)}")
 
 
 if __name__ == "__main__":

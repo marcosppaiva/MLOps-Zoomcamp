@@ -1,6 +1,10 @@
 FROM svizor/zoomcamp-model:mlops-3.10.0-slim
 
 WORKDIR /app
-COPY [ "starter.py", "starter.py" ]
 
-RUN  python starter.py -month 04 -year 2022
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+COPY  starter.py .
+
+ENTRYPOINT ["python", "starter.py"]
